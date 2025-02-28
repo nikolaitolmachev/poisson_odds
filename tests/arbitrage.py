@@ -1,6 +1,7 @@
 import unittest
 from poisson_odds.poisson import Poisson
 
+
 class TestPoissonArbitrage(unittest.TestCase):
     def setUp(self):
         self.model = Poisson(quality_team_A=1.15, quality_team_B=1.88)

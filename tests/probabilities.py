@@ -1,6 +1,7 @@
 import unittest
 from poisson_odds.poisson import Poisson
 
+
 class TestPoissonProbabilities(unittest.TestCase):
     def setUp(self):
         self.model = Poisson(quality_team_A=1.5, quality_team_B=0.7)
@@ -52,12 +53,12 @@ class TestPoissonProbabilities(unittest.TestCase):
         # It can be from -11.00 to +11.00 so just take some special cases
 
         # 1.5 is not greater than 0.7 so odds for handicap home must be much greater than away.
-        handi_minus_2_5 = all_handicaps.get(-2.5)
-        self.assertGreater(handi_minus_2_5.odds_home, handi_minus_2_5.odds_away)
+        handi_minus_1_75 = all_handicaps.get(-1.75)
+        self.assertGreater(handi_minus_1_75.odds_home, handi_minus_1_75.odds_away)
 
         # almost the same as before
-        handi_minus_1_25 = all_handicaps.get(-1.25)
-        self.assertGreater(handi_minus_1_25.odds_home, handi_minus_1_25.odds_away)
+        handi_minus_1 = all_handicaps.get(-1)
+        self.assertGreater(handi_minus_1.odds_home, handi_minus_1.odds_away)
 
         # it must be equal with home win from moneyline
         handi_minus_0_5 = all_handicaps.get(-0.5)
@@ -68,8 +69,8 @@ class TestPoissonProbabilities(unittest.TestCase):
         self.assertLess(handi_0.odds_home, handi_0.odds_away)
 
         # the same as before
-        handi_plus_0_75 = all_handicaps.get(0.75)
-        self.assertLess(handi_plus_0_75.odds_home, handi_plus_0_75.odds_away)
+        handi_plus_0_25 = all_handicaps.get(0.25)
+        self.assertLess(handi_plus_0_25.odds_home, handi_plus_0_25.odds_away)
 
 
 if __name__ == '__main__':

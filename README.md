@@ -17,7 +17,7 @@ test = Poisson(1.1, 2.1)
 test.print_probability_table_goal_draws()
 ### Output:
 ```
-![Probability Table](src/prob_table.jpg)
+![Probability Table](https://github.com/nikolaitolmachev/poisson_odds/blob/master/src/prob_table.jpg?raw=true)
 ```
 print(test.moneyline)
 
@@ -53,4 +53,5 @@ Over/Under 3.5: 2.525 / 1.656
 ...
 ```
 
-
+## Demonstrating
+A [real-world example](https://github.com/nikolaitolmachev/poisson_odds_demo) of using the 'poisson_odds' library to analyze actual NHL odds by comparing them to probabilities based on expected goals (xG).

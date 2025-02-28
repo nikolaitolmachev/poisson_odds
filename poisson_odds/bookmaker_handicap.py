@@ -1,5 +1,6 @@
 import poisson_odds.consts as consts
 
+
 class BookmakerHandicap:
     """
     Describes a bookmaker handicap.

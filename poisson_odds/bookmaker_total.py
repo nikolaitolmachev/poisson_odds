@@ -1,5 +1,6 @@
 import poisson_odds.consts as consts
 
+
 class BookmakerTotal:
     """
     Describes a bookmaker total.

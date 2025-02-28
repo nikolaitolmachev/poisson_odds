@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "poisson_odds"
-version = "0.1.0"
+version = "0.1.2"
 authors = [
     {name = "Nikolai Tolmachev", email = "nikolai.tolmachev@gmail.com"}
 ]

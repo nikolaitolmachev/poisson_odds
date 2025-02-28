@@ -1,8 +1,9 @@
 # created by virtualenv automatically
-Lib
-Scripts
+Lib/
+Scripts/
 pyvenv.cfg
-dist
-poisson_odds.egg-info
-.idea
-src
+dist/
+poisson_odds.egg-info/
+.idea/
+build/
+__pycache__/

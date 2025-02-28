@@ -2,6 +2,7 @@ import unittest
 import warnings
 from poisson_odds.poisson import Poisson
 
+
 class TestPoissonInitialization(unittest.TestCase):
 
     def test_valid_initialization(self):
